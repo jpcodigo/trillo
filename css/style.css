@@ -81,6 +81,12 @@ body {
   background-color: #fff;
   flex: 1; }
 
+.gallery {
+  display: flex; }
+  .gallery__pic {
+    width: 100%;
+    display: block; }
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem; }

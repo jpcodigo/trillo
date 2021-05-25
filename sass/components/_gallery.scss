@@ -1,1 +1,8 @@
+.gallery {
+  display: flex;
 
+  &__pic {
+    width: 100%;
+    display: block;
+  }
+}
