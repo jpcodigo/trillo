@@ -26,7 +26,8 @@ Grey dark 3: #999
   --color-gray-dark-1: #333;
   --color-gray-dark-2: #777;
   --color-gray-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --line: 1px solid var(--color-gray-light-2); }
 
 * {
   margin: 0;
@@ -62,7 +63,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-gray-light-2);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -204,7 +205,7 @@ body {
     margin-right: 1rem; }
 
 .overview {
-  border-bottom: 1px solid var(--color-gray-light-2);
+  border-bottom: var(--line);
   display: flex;
   align-items: center; }
   .overview__heading {
