@@ -21,6 +21,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(littler) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
 }
 
 .content {

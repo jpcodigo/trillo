@@ -10,6 +10,12 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(littler) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-gray-light-2);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
