@@ -337,6 +337,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__pic {
     box-sizing: content-box;
     height: 4rem;

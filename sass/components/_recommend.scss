@@ -9,6 +9,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__pic {
     box-sizing: content-box;
     height: 4rem;
