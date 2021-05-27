@@ -55,6 +55,10 @@
   @include respond(big) {
     padding: 3rem;
   }
+
+  @include respond(little) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -67,6 +71,11 @@
   @include respond(big) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+
+  @include respond(little) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
