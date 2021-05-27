@@ -50,6 +50,10 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include respond(1100) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -69,4 +73,29 @@ body {
 
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
+}
+
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == 1100 {
+    @media only screen and (min-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 1200 {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
 }
