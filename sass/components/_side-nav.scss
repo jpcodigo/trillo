@@ -3,7 +3,7 @@
   list-style: none;
   margin-top: 3.5rem;
 
-  @include respond(900) {
+  @include respond(big) {
     display: flex;
     margin: 0;
   }
@@ -37,12 +37,12 @@
     &:not(:last-child) {
       margin-bottom: 0.5rem;
 
-      @include respond(900) {
+      @include respond(big) {
         margin: 0;
       }
     }
 
-    @include respond(900) {
+    @include respond(big) {
       flex: 1;
     }
   }
@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
 
-    @include respond(900) {
+    @include respond(big) {
       justify-content: center;
       padding: 2rem;
     }
@@ -80,7 +80,7 @@
   text-align: center;
   padding: 2.5rem;
 
-  @include respond(900) {
+  @include respond(big) {
     display: none;
   }
 }

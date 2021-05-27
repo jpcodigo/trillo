@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
 
-  @include respond(900) {
+  @include respond(big) {
     padding: 2rem;
     margin-bottom: 3rem;
   }

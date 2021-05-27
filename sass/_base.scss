@@ -6,17 +6,17 @@
       @content;
     } //600px
   }
-  @if $breakpoint == 900 {
+  @if $breakpoint == big {
     @media only screen and (max-width: 56.25em) {
       @content;
     }
   }
-  @if $breakpoint == 1100 {
-    @media only screen and (min-width: 68.75em) {
+  @if $breakpoint == bigger {
+    @media only screen and (max-width: 68.75em) {
       @content;
     }
   }
-  @if $breakpoint == 1200 {
+  @if $breakpoint == biggest {
     @media only screen and (max-width: 75em) {
       @content;
     }
@@ -58,7 +58,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @include respond(1100) {
+  @include respond(bigger) {
     font-size: 50%;
   }
 }
